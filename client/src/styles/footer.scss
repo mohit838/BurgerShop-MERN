@@ -1,0 +1,54 @@
+@import "colors";
+
+footer {
+  min-height: 15rem;
+  background-color: $dark;
+  padding: 4rem;
+  color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+
+  h2 {
+    color: $red;
+    font-size: 2.5rem;
+    font-family: fantasy;
+    font-weight: 400;
+  }
+
+  em,
+  strong {
+    display: block;
+  }
+
+  strong {
+    margin: 1rem 0;
+  }
+
+  aside {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+      font-size: 1.4rem;
+    }
+
+    a {
+      margin: 0.5rem;
+      font-size: 2rem;
+      color: white;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
