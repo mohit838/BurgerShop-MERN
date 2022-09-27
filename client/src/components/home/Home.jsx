@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Founder from "./Founder";
+import Menu from "./Menu";
 
 const Home = () => {
   const motionOp = {
@@ -26,7 +27,12 @@ const Home = () => {
           Explore Your Treat
         </motion.a>
       </section>
+
+      {/* Founder Section */}
       <Founder />
+
+      {/* Menu Section */}
+      <Menu />
     </>
   );
 };
