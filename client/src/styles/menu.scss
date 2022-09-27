@@ -16,3 +16,79 @@
     justify-content: space-evenly;
   }
 }
+
+.menuCard {
+  background-color: white;
+  width: 30%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
+
+  > div {
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+    background-color: $red;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    height: 4rem;
+  }
+  > main {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    > img {
+      height: 15rem;
+      width: 100%;
+      object-fit: contain;
+    }
+
+    > h5 {
+      font-size: 1.8rem;
+    }
+
+    > p {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 1rem 0;
+    }
+
+    > button {
+      background-color: $red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 1rem 2rem;
+      width: 100%;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+
+      &:hover {
+        background-color: $redDark;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #menu > div {
+    flex-direction: column;
+  }
+
+  .menuCard {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}

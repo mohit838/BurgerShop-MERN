@@ -15,6 +15,7 @@ const Menu = () => {
           price={200}
           title="Cheese Burger"
           handlerBuyButton={handlerAddToCart}
+          delay={0.1}
         />
         <MenuCard
           itemNum={2}
@@ -22,6 +23,7 @@ const Menu = () => {
           price={300}
           title="Chill Burger"
           handlerBuyButton={handlerAddToCart}
+          delay={0.5}
         />
         <MenuCard
           itemNum={3}
@@ -29,6 +31,7 @@ const Menu = () => {
           price={400}
           title="Beef Burger"
           handlerBuyButton={handlerAddToCart}
+          delay={1}
         />
       </div>
     </section>
