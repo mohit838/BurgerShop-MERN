@@ -28,7 +28,9 @@ import "./styles/profile.scss";
 import "./styles/footer.scss";
 import "./styles/orderDetails.scss";
 import "./styles/table.scss";
+import "./styles/dashboard.scss";
 import OrderDetails from "./components/myOrders/OrderDetails";
+import Dashboard from "./components/admin/Dashboard";
 
 function App() {
   return (
@@ -46,6 +48,7 @@ function App() {
         <Route path="/mohit" element={<Profile />} />
         <Route path="/myorders" element={<MyOrders />} />
         <Route path="/order/:id" element={<OrderDetails />} />
+        <Route path="/admin/dashboard" element={<Dashboard />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 
