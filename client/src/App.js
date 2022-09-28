@@ -7,7 +7,9 @@ import Cart from "./components/cart/Cart";
 import Shipping from "./components/cart/Shipping";
 import ConfirmOrder from "./components/cart/ConfirmOrder";
 import PaymentSuccess from "./components/cart/PaymentSuccess";
+import Login from "./components/login/Login";
 import Footer from "./components/layout/Footer";
+import NotFound from "./components/layout/NotFound";
 import "./styles/app.scss";
 import "./styles/header.scss";
 import "./styles/home.scss";
@@ -19,8 +21,8 @@ import "./styles/cart.scss";
 import "./styles/shipping.scss";
 import "./styles/confirmOrder.scss";
 import "./styles/paymentsuccess.scss";
+import "./styles/login.scss";
 import "./styles/footer.scss";
-import NotFound from "./components/layout/NotFound";
 
 function App() {
   return (
@@ -34,6 +36,7 @@ function App() {
         <Route path="/shipping" element={<Shipping />} />
         <Route path="/confirm-order" element={<ConfirmOrder />} />
         <Route path="/payment-success" element={<PaymentSuccess />} />
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 
