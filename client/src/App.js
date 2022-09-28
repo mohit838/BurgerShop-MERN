@@ -34,7 +34,7 @@ function App() {
         <Route path="/shipping" element={<Shipping />} />
         <Route path="/confirm-order" element={<ConfirmOrder />} />
         <Route path="/payment-success" element={<PaymentSuccess />} />
-        <Route path="/not-found" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       {/* Footer */}
