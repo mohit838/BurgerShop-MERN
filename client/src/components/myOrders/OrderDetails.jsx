@@ -16,7 +16,7 @@ const OrderDetails = () => {
           <h1>Contact</h1>
           <p>
             <b>Name</b>
-            {"Abhishek"}
+            {"GhostRio"}
           </p>
           <p>
             <b>Phone</b>
