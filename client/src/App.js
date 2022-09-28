@@ -11,6 +11,10 @@ import Login from "./components/login/Login";
 import Profile from "./components/profile/Profile";
 import MyOrders from "./components/myOrders/MyOrders";
 import Footer from "./components/layout/Footer";
+import OrderDetails from "./components/myOrders/OrderDetails";
+import Dashboard from "./components/admin/Dashboard";
+import Users from "./components/admin/Users";
+import Orders from "./components/admin/Orders";
 import NotFound from "./components/layout/NotFound";
 import "./styles/app.scss";
 import "./styles/header.scss";
@@ -25,14 +29,10 @@ import "./styles/confirmOrder.scss";
 import "./styles/paymentsuccess.scss";
 import "./styles/login.scss";
 import "./styles/profile.scss";
-import "./styles/footer.scss";
 import "./styles/orderDetails.scss";
 import "./styles/table.scss";
 import "./styles/dashboard.scss";
-import OrderDetails from "./components/myOrders/OrderDetails";
-import Dashboard from "./components/admin/Dashboard";
-import Users from "./components/admin/Users";
-import Orders from "./components/admin/Orders";
+import "./styles/footer.scss";
 
 function App() {
   return (
@@ -54,6 +54,7 @@ function App() {
         <Route path="/admin/users" element={<Users />} />
         <Route path="/admin/orders" element={<Orders />} />
 
+        {/* Not Found Page */}
         <Route path="*" element={<NotFound />} />
       </Routes>
 
