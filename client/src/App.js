@@ -25,6 +25,8 @@ import "./styles/paymentsuccess.scss";
 import "./styles/login.scss";
 import "./styles/profile.scss";
 import "./styles/footer.scss";
+import "./styles/orderDetails.scss";
+import MyOrders from "./components/myOrders/MyOrders";
 
 function App() {
   return (
@@ -40,6 +42,7 @@ function App() {
         <Route path="/payment-success" element={<PaymentSuccess />} />
         <Route path="/login" element={<Login />} />
         <Route path="/mohit" element={<Profile />} />
+        <Route path="/myorders" element={<MyOrders />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 
