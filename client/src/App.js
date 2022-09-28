@@ -8,6 +8,7 @@ import Shipping from "./components/cart/Shipping";
 import ConfirmOrder from "./components/cart/ConfirmOrder";
 import PaymentSuccess from "./components/cart/PaymentSuccess";
 import Login from "./components/login/Login";
+import Profile from "./components/profile/Profile";
 import Footer from "./components/layout/Footer";
 import NotFound from "./components/layout/NotFound";
 import "./styles/app.scss";
@@ -22,6 +23,7 @@ import "./styles/shipping.scss";
 import "./styles/confirmOrder.scss";
 import "./styles/paymentsuccess.scss";
 import "./styles/login.scss";
+import "./styles/profile.scss";
 import "./styles/footer.scss";
 
 function App() {
@@ -37,6 +39,7 @@ function App() {
         <Route path="/confirm-order" element={<ConfirmOrder />} />
         <Route path="/payment-success" element={<PaymentSuccess />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/mohit" element={<Profile />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 
