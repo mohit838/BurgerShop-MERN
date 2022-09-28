@@ -20,6 +20,7 @@ import "./styles/shipping.scss";
 import "./styles/confirmOrder.scss";
 import "./styles/paymentsuccess.scss";
 import "./styles/footer.scss";
+import NotFound from "./components/layout/NotFound";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/shipping" element={<Shipping />} />
         <Route path="/confirm-order" element={<ConfirmOrder />} />
         <Route path="/payment-success" element={<PaymentSuccess />} />
+        <Route path="/not-found" element={<NotFound />} />
       </Routes>
 
       {/* Footer */}
