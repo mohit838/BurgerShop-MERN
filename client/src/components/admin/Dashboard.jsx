@@ -12,7 +12,7 @@ const loading = false;
 const Box = ({ title, value }) => (
   <div>
     <h3>
-      {title === "Income" && "₹"}
+      {title === "Income" && "$"}
       {value}
     </h3>
     <p>{title}</p>
