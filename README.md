@@ -9,4 +9,8 @@ Burger fullStack projects using MERN
 
 ## Packages for backEnd
 
-    npm i cors express nodemon dotenv mongoose
+    npm i cors express nodemon dotenv mongoose passport passport-google-oauth20 express-session cookie-parser
+
+## To run concurrently Client and Server
+
+    npm i concurrently
