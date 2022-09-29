@@ -6,3 +6,7 @@ Burger fullStack projects using MERN
 
     npm i react-router-dom
     chart.js react-chartjs-2 react-hot-toast react-icon react-redux @reduxjs/toolkit axios sass country-state-city framer-motion protected-route-react
+
+## Packages for backEnd
+
+    npm i cors express nodemon dotenv mongoose
