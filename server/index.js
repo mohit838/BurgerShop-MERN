@@ -1,4 +1,8 @@
 import app from "./app.js";
+import { connectDB } from "./config/mongoDB.js";
+
+// DB Connection Funciton Call
+connectDB();
 
 // GET Method
 app.get("/", (req, res) => {
