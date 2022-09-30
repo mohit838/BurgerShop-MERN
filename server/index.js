@@ -5,7 +5,7 @@ import { connectDB } from "./config/mongoDB.js";
 connectDB();
 
 // GET Method
-app.get("/", (req, res) => {
+app.get("/", (req, res, next) => {
   res.send("<h1>This Is BurgerShop.</h1>");
 });
 
