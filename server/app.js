@@ -37,4 +37,4 @@ connectPassport();
 
 // Import All Routes
 app.use("/api/v1", userRoutes);
-app.use(errorMiddleware());
+app.use(errorMiddleware);
