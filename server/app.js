@@ -13,6 +13,8 @@ dotenv.config({
 });
 
 // Using Middlewares
+
+// **Note: Use "Session" Before User "Passport("session")"
 app.use(
   session({
     secret: process.env.SESSION_SECRET,
