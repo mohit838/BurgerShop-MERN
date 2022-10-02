@@ -23,6 +23,6 @@ router.get(
   // })
 );
 
-router.get("/me", myProfile);
+router.get("/rio", myProfile);
 
 export default router;
