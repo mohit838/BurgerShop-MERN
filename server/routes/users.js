@@ -13,6 +13,7 @@ router.get(
 
 router.get(
   "/login",
+  passport.authenticate("google"),
   (req, res, next) => {
     res.send("Logged In");
   }
@@ -25,5 +26,7 @@ router.get(
 );
 
 router.get("/rio", myProfile);
+
+router.get("/logout", logout);
 
 export default router;
