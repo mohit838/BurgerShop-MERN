@@ -16,4 +16,4 @@ connectPassport();
 // Import All Routes
 import userRoutes from "./routes/users.js";
 
-app.use("api/v1", userRoutes);
+app.use("/api/v1", userRoutes);
