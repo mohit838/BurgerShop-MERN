@@ -23,4 +23,6 @@ router.get(
   // })
 );
 
+router.get("/me", myProfile);
+
 export default router;
