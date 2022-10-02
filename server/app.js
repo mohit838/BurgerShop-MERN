@@ -4,6 +4,8 @@ import { connectPassport } from "./utils/Provider.js";
 import session from "express-session";
 import passport from "passport";
 import cookieParser from "cookie-parser";
+import userRoutes from "./routes/users.js";
+import { errorMiddleware } from "./middlewares/errorHandler.js";
 
 const app = express();
 
@@ -34,6 +36,5 @@ app.use(passport.session());
 connectPassport();
 
 // Import All Routes
-import userRoutes from "./routes/users.js";
-
 app.use("/api/v1", userRoutes);
+app.use(errorMiddleware());
