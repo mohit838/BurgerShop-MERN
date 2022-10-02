@@ -1,5 +1,6 @@
 import express from "express";
 import passport from "passport";
+import { myProfile } from "../controller/user";
 
 const router = express.Router();
 
